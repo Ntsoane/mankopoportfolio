@@ -1,0 +1,198 @@
+:root{
+  --primary-color: rgba(128, 128, 255, 0.9);
+  --secondary-color:#90323D;
+  --accent-color:#BC8034;
+  --bg-color:#d9CAB3;
+  --shadow-color: #8c7A6B;
+  font-family: monospace;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 16px;
+  padding: 0;
+background-color: #eeeeee;
+  margin: 0;
+}
+
+/*nav.css*/
+nav {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  box-shadow: 2px 2px 5px grey;
+}
+
+nav a{
+  text-decoration:none;
+  color: black;
+  padding: 1em;
+}
+
+nav a:first-child{
+  margin-left: 10%;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #1b8085;
+  cursor: pointer;
+}
+
+/* header styling */
+
+header{
+  background-image: url("../images/blue.jpg");
+  display: flex;
+  height: 100vh;
+}
+
+header img{
+  width: 100%;
+}
+
+header div.headerFigure{
+  background: var(--primary-color);
+  box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  margin: auto;
+  width: 200px;
+}
+
+header div.headerFigure p,
+header div.headerFigure h2{
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/*quote block css*/
+blockquote{
+  margin: 3em auto;
+  text-align: center;
+  color: BLACK;
+  font-size: 1.5em;
+  width: 60%;
+
+}
+
+blockquote #saidBy{
+  text-align: right;
+  font-size: 0.8em;
+}
+
+blockquote #saidBy::before{
+  content: '-'
+}
+blockquote p:first-child::after,
+blockquote p:first-child::before{
+  content: '"'
+}
+
+main{
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr  ));
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+main figure{
+  margin: 0;
+box-shadow: 5px 5px 5px 5px lightgrey;
+  border: 2px solid white;
+}
+main figure .hover{
+  cursor: pointer;
+
+}
+
+main figure img {
+  width: 100%;
+}
+
+main figure figcaption h1,
+main figure figcaption p{
+  color: BLACK;
+  text-align: center;
+  margin: 0.5em 0 0 0;
+  padding: 0 1em;
+}
+
+/* Contact Styling Starts Here */
+
+#contact{
+  margin: 3em auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+  grid-gap: 3em;
+  color: white;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #54aff4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #4d62ff;
+}
+
+input[type=text],select,textarea{
+  margin: 5px 0;
+  width: 100%;
+  padding: 1em;
+  border: 0 solid white;
+  background: #54aff4;
+  border-left: 5px solid #4d62ff;
+  border-radius: 5px;
+  resize: vertical;
+  color: white;
+}
+
+footer{
+background-color: lightgrey;
+  text-align:center;
+  padding: auto;
+}
+
+footer div.adress{
+  text-align: left;
+}
+
+footer ul{
+  list-style-type: none;
+}
+footer a{
+  text-decoration: none;
+  color: BLACK;
+  /* border: 1px;
+  border-style: solid;
+  /* border-radius:200px; */ */
+}
+
+i{
+  margin-right: 10px;
+}
